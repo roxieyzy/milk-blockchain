@@ -1,1 +1,21 @@
-在idea上编写vue时发现无法编译，尝试过npm install等等方法但还是无法启用npm，所以决定在vscode上编写前端，提示用着也方便
+在idea上编写vue时发现无法编译，尝试过npm install等等方法但还是无法启用npm，所以决定在vscode上编写前端。
+
+
+hyperledger fabric 搭建在网上找了很多攻略，很少有在windows上直接部署的，centos图形化界面需要另外设置，为了避免一些兼容问题选择用ubuntu来搭建
+
+
+ubuntu搭建出现一些问题，在安装完git,curl,docker,go后，按照教程应该解压fabric的两个文件，但是突然提示没有权限，第一反应是su root，但是发现虚拟机对所有的sudo命令都不接受，上网寻求帮助，发现可能是之前配置path的时候将sudo的路径配置给覆盖了，尝试解决但不起效果，只能
+暂时搁置
+
+
+后端controller层基本实现，dao，entity等基本编写完成，数据库相关完成
+
+
+前端基本完成，与后端交互时发现问题，经过排查发现是接口冲突，已解决
+
+
+再次尝试在ubuntu上搭建fabric，由于之前的虚拟机path有问题，所以先删除了原先的虚拟机，安装了前面的git，docker等等以后发现从github仓库克隆时显示拒绝访问，尝试过更改vpn但无效，可以ping通github，又尝试将https改为git，同样无效，只能再次放弃，先尝试将溯源部分相关代码
+编写完成 
+
+
+
